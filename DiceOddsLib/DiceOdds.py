@@ -157,9 +157,11 @@ def get_graph_line(n_occurrences : int, max_occurrences : int) -> str:
     Returns a graph string for the given occurrences.
     """
     if max_occurrences > 50:
-        return '█' * int((n_occurrences / max_occurrences) * 100 + 1)
+        # return '█' * int((n_occurrences / max_occurrences) * 100 + 1)
+        return '=' * int((n_occurrences / max_occurrences) * 50 + 1)
     else:
-        return '█' * n_occurrences
+        # return '█' * n_occurrences
+        return '=' * n_occurrences
 
 def DiceOdds(args : list = None):
     # Extract flags and die arguments
@@ -232,7 +234,7 @@ def DiceOdds(args : list = None):
     if do_roll:
         # Do a roll
         roll = sum(rand.choice(generate_all_rolls(dice_faces)))
-        print(f"You Rolled a {roll}!")
+        print(f"Your Roll is: {roll}")
         print()
 
 if __name__ == "__main__":
