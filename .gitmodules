@@ -1,0 +1,6 @@
+[submodule "DiceOdds"]
+	path = DiceOdds
+	url = https://github.com/CarrotBRRR/DiceOdds.git
+[submodule "PyStoreJSON"]
+	path = PyStoreJSON
+	url = https://github.com/CarrotBRRR/PyStoreJSON.git
